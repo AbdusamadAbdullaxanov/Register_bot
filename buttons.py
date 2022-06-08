@@ -1,0 +1,25 @@
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+register = KeyboardButton("📓 Ro'yxatdan o'tish 📓")
+finish = KeyboardButton("Boshidan boshlash 🔁")
+aboutus = KeyboardButton("Biz haqimizda")
+lan = KeyboardButton("Uzbek")
+lan2 = KeyboardButton("Russian")
+timetable1 = KeyboardButton("ertalab 8 dan 10 gacha")
+timetable2 = KeyboardButton("ertalab 10 dan 12 gacha")
+timetable3 = KeyboardButton("tushlikda 2 dan 4 gacha")
+timetable4 = KeyboardButton("kechki payt 4 dan 6 gacha")
+button1 = KeyboardButton('Pythonda dasturlash')
+button2 = KeyboardButton('Arxitektura va dizayn')
+button3 = KeyboardButton('Grafika dizayni')
+button4 = KeyboardButton('Kompyuter savodxonligi')
+button5 = KeyboardButton('android dasturlash')
+button6 = KeyboardButton('Veb dasturlash')
+button7 = KeyboardButton('Mobil robototexnika')
+
+adduz = ReplyKeyboardMarkup(resize_keyboard=True).add(button1, button2, button3, button4, button5, button6, button7,
+                                                      finish, aboutus)
+time_table = ReplyKeyboardMarkup(resize_keyboard=True).add(timetable1, timetable2, timetable3, timetable4, finish, aboutus)
+
+eventually = ReplyKeyboardMarkup(resize_keyboard=True).add(register, finish)
+retry = ReplyKeyboardMarkup(resize_keyboard=True).add(finish)
+language_setup = ReplyKeyboardMarkup(resize_keyboard=True).add(lan, lan2)
